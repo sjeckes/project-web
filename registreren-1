@@ -11,14 +11,15 @@
 <body>
     <header>
         <ul>
-
-            <li><a href="index.html">Home</a></li>
-            <li><a href="ontdek.html">Ontdek</a></li>
-            <li><a href="uitgelicht.html">Uitgelicht</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="about.html">About</a></li>
+            <div class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ontdek.html">Ontdek</a></li>
+                <li><a href="uitgelicht.html">Uitgelicht</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+            </div>
             <a class="header-icon" href="johancruijff.html">&#9776;</a>
-            <a class="sliders" href="sliders"><i class="fa fa-sliders fa-2x" aria-hidden="true"></i></a>
+
         </ul>
 
     </header>

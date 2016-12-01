@@ -1,73 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Voorpagina</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Bekijk alle reisverhalen op Transavia!</title>
+    <script src="js/javascript.js"></script>
+    <script src="https://use.fontawesome.com/9b2fbceb66.js"></script>
 </head>
+
 <body>
-   <header>
-        
+    <header>
         <ul>
-            <li>Home</li>
-            <li>Ontdek</li>
-            <li>Uitgelicht</li>
-            <li>Contact</li>
-            <li>About</li>
+
+            <li><a href="index.html">Home</a></li>
+            <li><a href="ontdek.html">Ontdek</a></li>
+            <li><a href="uitgelicht.html">Uitgelicht</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+            <a class="header-icon" href="johancruijff.html">&#9776;</a>
+            <a class="user" href="aanmelden.html"><i class="fa fa-user fa-2x" aria-hidden="true"></i></a>
+            <a class="sliders" href="sliders"><i class="fa fa-sliders fa-2x" aria-hidden="true"></i></a>
         </ul>
-       
-        <a href="index.html" class="login">Voorpagina</a>
-        <a href="uitgelicht.html" class="uitgelicht">Uitgelicht</a>
+
     </header>
-    
-    <aside>
-        <h3>Wat wil je lezen?</h3>
-        <form>            
-            <legend>Onderwerp</legend>
-            <select name="Onderwerp">
-                <option value="kies">Kies uw onderwerp</option>               
-                <option value="Religie">Religie</option>
-                <option value="Voetbal">Voetbal</option>
-                <option value="Emotie">Emotie</option>
-                <option value="Politiek">Politiek</option>
-                <option value="Geschiedenis">Geschiedenis</option>
-                <option value="Personen">Personen</option>
-                <option value="Literatuur">Literatuur</option>
-                <option value="Overig">Overig</option>
-            </select>
-            
-            <legend>Sorteren op</legend>
-            <select name="Sorteren">
-                <option value="kies">Kies sorteer mogelijkheid</option>
-                <option value="A-Z">A-Z</option>
-                <option value="Z-A">Z-A</option>
-                <option value="Populair">Populair</option>
-                <option value="Trending">Trending</option>
-                <option value="Meeste comments">Meeste comments</option>
-                <option value="Minste comments">Minste comments</option>
-                <option value="Meeste views">Meeste views</option>
-                <option value="Minste views">Minste views</option>
-            </select>
-            <input type="submit" value="Zoeken">
-        </form>
+    <div class="content-aside">
+        <aside class="zoeken">
+            <h1>Wat wil je lezen?</h1>
+            <form class="form-sorteren">
+                <fieldset class="fieldset-1">
+                    <legend>Onderwerp</legend>
+                    <select name="Onderwerp">
+                        <option value="kies">Onderwerp</option>
+                        <option value="Religie">Religie</option>
+                        <option value="Voetbal">Voetbal</option>
+                        <option value="Emotie">Emotie</option>
+                        <option value="Politiek">Politiek</option>
+                        <option value="Geschiedenis">Geschiedenis</option>
+                        <option value="Personen">Personen</option>
+                        <option value="Literatuur">Literatuur</option>
+                        <option value="Overig">Overig</option>
+                    </select>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Schrijver</legend>
+                    <select name="Schrijver">
+                        <option value="kies">Schrijver</option>
+                        <option value="A-Z">A-Z</option>
+                        <option value="Z-A">Z-A</option>
+                        <option value="Populair">Populair</option>
+                        <option value="Trending">Trending</option>
+                        <option value="Meeste comments">Meeste comments</option>
+                        <option value="Minste comments">Minste comments</option>
+                        <option value="Meeste views">Meeste views</option>
+                        <option value="Minste views">Minste views</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Sorteren op</legend>
+                    <select name="Sorteren">
+                        <option value="kies">Sorteer</option>
+                        <option value="A-Z">A-Z</option>
+                        <option value="Z-A">Z-A</option>
+                        <option value="Populair">Populair</option>
+                        <option value="Trending">Trending</option>
+                        <option value="Meeste comments">Comments: meest</option>
+                        <option value="Minste comments">Comments: minst</option>
+                        <option value="Meeste views">Views: meest</option>
+                        <option value="Minste views">Views: minst</option>
+                    </select>
+                </fieldset>
+
+                <button class="button-zoeken" type="submit" value="Zoeken">Zoeken</button>
+            </form>
+        </aside>
+
+        <main>
+
+            <h1>Onze reisverhalen (x)</h1>
+
+            <section class="pane">
+
+                <article class="article-johan">
+                    <section class="verhaal-colum-1">
+                        <h3>Johan Cruijff</h3>
+                        <p class="date">12 juli 2011</p>
+                        <p class="article-text">In principe is het dus zo dat je uit Bus 21 stapte en op weg was naar de Openbare Bibliotheek om Stijloefeningen van Raymond Queneau te lenen. </p>
+                        <a class="button-lezen" href="johancruijff.html">Lezen</a>
+                    </section>
+
+                    <section class="verhaal-colum-2">
+                        <p class="read-time">15 min</p>
+                        <img class="img-johan" src="images/johancruijff.jpg" alt="Johan Cruijff">
+                        <a class="comments" href="johancruijff.html">2 comments</a>
+                    </section>
+                </article>
+
+                <article class="article-ongeluk">
+                    <section class="verhaal-colum-1">
+                        <h3>Ongeluk</h3>
+                        <p class="date">17 februari 2011</p>
+                        <p class="article-text">Voor het Centraal Station stap ik lijn 13 uit midden in een plas die zo diep is dat mijn hele schoen erin verdwijnt. Mijn zoontje, waarvan ik had gehoopt dat ie al... </p>
+                        <a class="button-lezen" href="ongeluk.html">Lezen</a>
+                    </section>
+
+                    <section class="verhaal-colum-2">
+                        <p class="read-time">10 min</p>
+                        <img class="img-ongeluk" src="images/ongeluk.png">
+                        <a class="comments" href="ongeluk.html">2 comments</a>
+                    </section>
+
+                </article>
+
+                <article class="article-ongeluk">
+                    <section class="verhaal-colum-1">
+                        <h3>Ongeluk</h3>
+                        <p class="date">17 februari 2011</p>
+                        <p class="article-text">Voor het Centraal Station stap ik lijn 13 uit midden in een plas die zo diep is dat mijn hele schoen erin verdwijnt. Mijn zoontje, waarvan ik had gehoopt dat ie al... </p>
+                        <a class="button-lezen" href="ongeluk.html">Lezen</a>
+                    </section>
+
+                    <section class="verhaal-colum-2">
+                        <p class="read-time">10 min</p>
+                        <img class="img-ongeluk" src="images/ongeluk.png">
+                        <a class="comments" href="ongeluk.html">2 comments</a>
+                    </section>
+
+                </article>
+            </section>
+            <div class="button-centered">
+                <a class="button-verhalen" href="verhalen.html">Bekijk alle 99 verhalen</a>
+            </div>
+        </main>
+    </div>
+    <aside class="onderwerpen">
+        <section>
+            <img class="onderwerp-foto" src="images/voetbal.jpg" alt="Voetbal">
+        </section>
+        <section>
+            <img class="onderwerp-foto" src="images/god.png" alt="God">
+        </section>
+        <section>
+            <img class="onderwerp-foto" src="images/politiek.jpg" alt="Politiek">
+        </section>
+        <section>
+            <img class="onderwerp-foto" src="images/personen.jpg" alt="Personen">
+        </section>
+        <section>
+            <img class="onderwerp-foto" src="images/muziek.jpg" alt="Muziek">
+        </section>
+        <section>
+            <img class="onderwerp-foto" src="images/emotie.jpg" alt="Emotie">
+        </section>
     </aside>
-    
-    <main>
-       
-       <h1>Onze reisverhalen (x)</h1>
-       
-        <article>
-            <h3>Johan Cruijff</h3>
-            <p>15 min</p>
-            <p>Molovich</p>
-            <p>12 juli 2011</p>
-            <p>In principe is het dus zo dat je uit Bus 21 stapte en op weg was naar de Openbare Bibliotheek om Stijloefeningen van Raymond Queneau te lenen. Je zocht er dus zeg maar al een tijdje naar, maar het was nergens te vinden, dus daarom moest het wel in de bibliotheek te vinden zijn.</p>
-            <img src="images/johancruijff.jpg">
-            <a href="johancruijff.html">Lezen</a>
-            <a href="johancruijff.html">2 comments</a>
-        </article>
-        
-        <a href="verhalen.html">Bekijk alle verhalen</a>
-    
-    </main>
+
 </body>
-</html>    
+
+</html>
