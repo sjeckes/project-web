@@ -6,157 +6,231 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Bekijk alle reisverhalen op Transavia!</title>
-    <script src="js/javascript.js"></script>
     <script src="https://use.fontawesome.com/9b2fbceb66.js"></script>
 </head>
 
 <body>
+
     <header>
         <ul>
-
             <li><a href="index.html">Home</a></li>
+            <li class="pushbutton">Inloggen</li>
             <li><a href="ontdek.html">Ontdek</a></li>
-            <li><a href="uitgelicht.html">Uitgelicht</a></li>
+            <li><a href="uitgelicht.html">Downloads</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="about.html">About</a></li>
-            <a class="header-icon" href="johancruijff.html">&#9776;</a>
-            <a class="user" href="aanmelden.html"><i class="fa fa-user fa-2x" aria-hidden="true"></i></a>
-            <a class="sliders" href="sliders"><i class="fa fa-sliders fa-2x" aria-hidden="true"></i></a>
         </ul>
 
+        <img class="menu" src="images/fa-hamburger.png" alt="Hamburger">
+        <a href="aanmelden.html"><img class="user" src="images/fa-user.png" alt="User"></a>
+        <img class="sliders" src="images/fa-sliders.png" alt="Sliders">
     </header>
+    
+    
+    <aside class="pulllogin">
+        <h2>Mijn Transavia</h2>
+        <form action="index.html">
+                    <fieldset>
+                        <legend>Email</legend>
+                        <input type="email" name="email" placeholder="E-mail" required>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Wachtwoord</legend>
+                        <input type="password" name="ww" placeholder="Wachtwoord" required>
+                        <a href="vergeten.html">Wachtwoord vergeten?</a>
+                    </fieldset>
+                    <div>
+                        <button class="button-login" type="submit" value="Zoeken">Inloggen</button>
+                    </div>
+                    <a href="registreren-1.html">Nog geen account? Registreet je hier!</a>
+                </form>
+    </aside>
+
     <div class="content-aside">
         <aside class="zoeken">
-            <h1>Wat wil je lezen?</h1>
-            <form class="form-sorteren">
-                <fieldset class="fieldset-1">
-                    <legend>Onderwerp</legend>
-                    <select name="Onderwerp">
-                        <option value="kies">Onderwerp</option>
-                        <option value="Religie">Religie</option>
-                        <option value="Voetbal">Voetbal</option>
-                        <option value="Emotie">Emotie</option>
-                        <option value="Politiek">Politiek</option>
-                        <option value="Geschiedenis">Geschiedenis</option>
-                        <option value="Personen">Personen</option>
-                        <option value="Literatuur">Literatuur</option>
-                        <option value="Overig">Overig</option>
-                    </select>
+            <div class="zoeken-container">
 
-                </fieldset>
+                <h1>Wat wil je lezen?</h1>
 
-                <fieldset>
-                    <legend>Schrijver</legend>
-                    <select name="Schrijver">
-                        <option value="kies">Schrijver</option>
-                        <option value="A-Z">A-Z</option>
-                        <option value="Z-A">Z-A</option>
-                        <option value="Populair">Populair</option>
-                        <option value="Trending">Trending</option>
-                        <option value="Meeste comments">Meeste comments</option>
-                        <option value="Minste comments">Minste comments</option>
-                        <option value="Meeste views">Meeste views</option>
-                        <option value="Minste views">Minste views</option>
-                    </select>
-                </fieldset>
-                <fieldset>
-                    <legend>Sorteren op</legend>
-                    <select name="Sorteren">
-                        <option value="kies">Sorteer</option>
-                        <option value="A-Z">A-Z</option>
-                        <option value="Z-A">Z-A</option>
-                        <option value="Populair">Populair</option>
-                        <option value="Trending">Trending</option>
-                        <option value="Meeste comments">Comments: meest</option>
-                        <option value="Minste comments">Comments: minst</option>
-                        <option value="Meeste views">Views: meest</option>
-                        <option value="Minste views">Views: minst</option>
-                    </select>
-                </fieldset>
+                <form class="form-sorteren">
+                    <fieldset>
+                        <legend>Ik wil een verhaal lezen dat over het onderwerp ... gaat</legend>
+                        <div>
+                            <input id="soccer" type="checkbox">
+                            <label for="soccer">VOETBAL</label>
+                            <input id="persons" type="checkbox">
+                            <label for="persons">PERSONEN</label>
+                            <input id="emotion" type="checkbox">
+                            <label for="emotion">EMOTIE</label>
+                            <input id="politics" type="checkbox">
+                            <label for="politics">POLITIEK</label>
+                            <input id="music" type="checkbox">
+                            <label for="music">MUZIEK</label>
+                            <input id="history" type="checkbox">
+                            <label for="history">GESCHIEDENIS</label>
+                        </div>
+                    </fieldset>
 
-                <button class="button-zoeken" type="submit" value="Zoeken">Zoeken</button>
-            </form>
+                    <fieldset>
+                        <legend>Dit verhaal duurt ... minuten</legend>
+                        <div>
+
+                            <input id="time5" type="checkbox">
+                            <label for="time5">&lt; 5</label>
+                            <input id="time510" type="checkbox">
+                            <label for="time510">5 - 10</label>
+                            <input id="time1015" type="checkbox">
+                            <label for="time1015">10 - 15</label>
+                            <input id="time1520" type="checkbox">
+                            <label for="time1520">15 - 20</label>
+                            <input id="time20" type="checkbox">
+                            <label for="time20">&gt; 20</label>
+                        </div>
+                    </fieldset>
+
+                   
+                    <fieldset>
+                        <legend>En is vormgegeven door ...</legend>
+                        <div>
+                            <input id="klaas" type="checkbox">
+                            <label for="klaas">KLAAS PIETERSEN</label>
+                            <input id="brent" type="checkbox">
+                            <label for="brent">BRENT HOOIENS</label>
+                            <input id="sven" type="checkbox">
+                            <label for="sven">SVEN KILOCO</label>
+                        </div>
+                    </fieldset>
+
+                   
+                    <fieldset>
+                        <legend>En staat gesorteerd op ...</legend>
+                        <div>
+                            <input id="az" type="checkbox">
+                            <label for="az">A-Z</label>
+                            <input id="za" type="checkbox">
+                            <label for="za">Z-A</label>
+                            <input id="newfirst" type="checkbox">
+                            <label for="newfirst">NIEWSTE EERST</label>
+                            <input id="oldfirst" type="checkbox">
+                            <label for="oldfirst">OUDSTE EERST</label>
+                            <input id="trending" type="checkbox">
+                            <label for="trending">TRENDING</label>
+                            <input id="mostviews" type="checkbox">
+                            <label for="mostviews">MEESTE VIEWS</label>
+                            <input id="fewviews" type="checkbox">
+                            <label for="fewviews">MINSTE VIEWS</label>
+                            <input id="mostcomments" type="checkbox">
+                            <label for="mostcomments">MEESTE COMMENTS</label>
+                            <input id="fewcomments" type="checkbox">
+                            <label for="fewcomments">MINSTE COMMENTS</label>
+                        </div>
+                    </fieldset>
+                    
+                    <div class="button-centered">
+                        <button class="button-zoeken" type="submit" value="Zoeken">Zoeken</button>
+                    </div>
+                </form>
+            </div>
         </aside>
 
+       
         <main>
-
-            <h1>Onze reisverhalen (x)</h1>
-
+            <h1>Onze reisverhalen (3)</h1>
             <section class="pane">
 
-                <article class="article-johan">
+                <article>
                     <section class="verhaal-colum-1">
                         <h3>Johan Cruijff</h3>
-                        <p class="date">12 juli 2011</p>
-                        <p class="article-text">In principe is het dus zo dat je uit Bus 21 stapte en op weg was naar de Openbare Bibliotheek om Stijloefeningen van Raymond Queneau te lenen. </p>
-                        <a class="button-lezen" href="johancruijff.html">Lezen</a>
                     </section>
 
                     <section class="verhaal-colum-2">
                         <p class="read-time">15 min</p>
-                        <img class="img-johan" src="images/johancruijff.jpg" alt="Johan Cruijff">
-                        <a class="comments" href="johancruijff.html">2 comments</a>
                     </section>
+
+                    <section class="verhaal-colum-3">
+                        <img src="images/johancruijff.png" alt="Sfeerfoto">
+                    </section>
+                    
+                    <p class="author">Stijn Eckes</p>
+                    <a href="johancruijff.html#comments">4 comments</a>
+                    <div class="button-centered">
+                    <a class="button-lezen" href="johancruijff.html">Lees het verhaal</a>
+                    </div>
                 </article>
 
-                <article class="article-ongeluk">
+                <article>
                     <section class="verhaal-colum-1">
                         <h3>Ongeluk</h3>
-                        <p class="date">17 februari 2011</p>
-                        <p class="article-text">Voor het Centraal Station stap ik lijn 13 uit midden in een plas die zo diep is dat mijn hele schoen erin verdwijnt. Mijn zoontje, waarvan ik had gehoopt dat ie al... </p>
-                        <a class="button-lezen" href="ongeluk.html">Lezen</a>
                     </section>
 
                     <section class="verhaal-colum-2">
-                        <p class="read-time">10 min</p>
-                        <img class="img-ongeluk" src="images/ongeluk.png">
-                        <a class="comments" href="ongeluk.html">2 comments</a>
+                        <p class="read-time">17 min</p>
                     </section>
 
+                    <section class="verhaal-colum-3">
+                        <img src="images/ongelukk.png" alt="Sfeerbeeld">
+                    </section>
+                    <p class="author">Stijn Eckes</p>
+                    <a href="ongeluk.html#comments">6 comments</a>
+                    <div class="button-centered">
+                        <a class="button-lezen" href="ongeluk.html">Lees het verhaal</a>
+                    </div>
                 </article>
 
-                <article class="article-ongeluk">
+                <article>
                     <section class="verhaal-colum-1">
-                        <h3>Ongeluk</h3>
-                        <p class="date">17 februari 2011</p>
-                        <p class="article-text">Voor het Centraal Station stap ik lijn 13 uit midden in een plas die zo diep is dat mijn hele schoen erin verdwijnt. Mijn zoontje, waarvan ik had gehoopt dat ie al... </p>
-                        <a class="button-lezen" href="ongeluk.html">Lezen</a>
+                        <h3>Verliefd</h3>
                     </section>
 
                     <section class="verhaal-colum-2">
-                        <p class="read-time">10 min</p>
-                        <img class="img-ongeluk" src="images/ongeluk.png">
-                        <a class="comments" href="ongeluk.html">2 comments</a>
+                        <p class="read-time">23 min</p>
                     </section>
 
+                    <section class="verhaal-colum-3">
+                        <img src="images/verliefd.png" alt="Sfeerfoto">
+                    </section>
+                    <p class="author">Stijn Eckes</p>
+                    <a href="verliefd.html#comments">2 comments</a>
+                    <div class="button-centered">
+                        <a class="button-lezen" href="verliefd.html">Lees het verhaal</a>
+                    </div>
                 </article>
+
             </section>
             <div class="button-centered">
                 <a class="button-verhalen" href="verhalen.html">Bekijk alle 99 verhalen</a>
             </div>
         </main>
     </div>
-    <aside class="onderwerpen">
+    
+    
+    <footer class="onderwerpen">
         <section>
-            <img class="onderwerp-foto" src="images/voetbal.jpg" alt="Voetbal">
+            <a href="index.html"><img src="images/sport.png" alt="Sport"></a>
+            <a href="index.html"><h2>Sport</h2></a>
         </section>
         <section>
-            <img class="onderwerp-foto" src="images/god.png" alt="God">
+            <a href="index.html"><img src="images/god2.png" alt="God"></a>
+            <a href="index.html"><h2>Religie</h2></a>
         </section>
         <section>
-            <img class="onderwerp-foto" src="images/politiek.jpg" alt="Politiek">
+            <a href="index.html"><img src="images/politiek.png" alt="Politiek"></a>
+            <a href="index.html"><h2>Politiek</h2></a>
         </section>
         <section>
-            <img class="onderwerp-foto" src="images/personen.jpg" alt="Personen">
+            <a href="index.html"><img src="images/personen.png" alt="Personen"></a>
+            <a href="index.html"><h2>Personen</h2></a>
         </section>
         <section>
-            <img class="onderwerp-foto" src="images/muziek.jpg" alt="Muziek">
+            <a href="index.html"><img src="images/muziek.png" alt="Muziek"></a>
+            <a href="index.html"><h2>Muziek</h2></a>
         </section>
         <section>
-            <img class="onderwerp-foto" src="images/emotie.jpg" alt="Emotie">
+            <a href="index.html"><img src="images/emotie.png" alt="Emotie"></a>
+            <a href="index.html"><h2>Emotie</h2></a>
         </section>
-    </aside>
-
+    </footer>
+    <script src="js/javascript.js"></script>
 </body>
 
 </html>

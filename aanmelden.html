@@ -5,48 +5,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>Log in bij Transavia!</title>
+    <title>Bekijk alle reisverhalen op Transavia!</title>
+    <script src="https://use.fontawesome.com/9b2fbceb66.js"></script>
 </head>
 
-<body>
+<body id="bgimage">
+    
     <header>
         <ul>
-
             <li><a href="index.html">Home</a></li>
+            <li><a href="aanmelden.html">Inloggen</a></li>
             <li><a href="ontdek.html">Ontdek</a></li>
             <li><a href="uitgelicht.html">Uitgelicht</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="about.html">About</a></li>
-            <a class="header-icon" href="johancruijff.html">&#9776;</a>
-            <a class="sliders" href="sliders"><i class="fa fa-sliders fa-2x" aria-hidden="true"></i></a>
         </ul>
-
+        <img class="menu" src="images/fa-hamburger.png" alt="Hamburger">
+        <a href="aanmelden.html"><img class="user" src="images/fa-user.png" alt="User"></a>
+        <img class="sliders" src="images/fa-sliders.png" alt="Sliders">
     </header>
-    <div class="login-centerd-position">
-        <main class="login">
-            <div class="login-position">
-                <section class="login-row-1">
-                    <h1 class="loginheader">Mijn Transavia</h1>
-                    <form class="login-form" action="index.html">
-                        <fieldset class="fieldset-1">
-                            <legend>Email</legend>
-                            <input type="email" name="email" placeholder="E-mail" required>
-                        </fieldset>
-                        <fieldset>
-                            <legend>Wachtwoord</legend>
-                            <input type="password" name="ww" placeholder="Wachtwoord" required>
-                        </fieldset>
-                        <a class="wachtwoord-vergeten" href="vergeten.html">Wachtwoord vergeten?</a>
-                </section>
-                <section class="login-row-2">
-                    <button class="button-login" type="submit" value="Zoeken">Inloggen</button>
-                    </form>
-                    <a class="facebook-login" href="facebook-login">Of log in via Facebook</a>
-                    <p>Nog geen account? <a href="registreren-1.html">Registreet je hier!</a></p>
-                </section>
-            </div>
-        </main>
-    </div>
+
+    <main class="login">
+        <div class="login-position">
+            <section class="login-row-1">
+                <h1>Mijn Transavia</h1>
+                <form action="index.html">
+                    <fieldset>
+                        <legend>Email</legend>
+                        <input type="email" name="email" placeholder="E-mail" required>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Wachtwoord</legend>
+                        <input type="password" name="ww" placeholder="Wachtwoord" required>
+                        <a href="vergeten.html">Wachtwoord vergeten?</a>
+                    </fieldset>
+                    <div>
+                        <button class="button-login" type="submit" value="Zoeken">Inloggen</button>
+                    </div>
+                </form>
+            </section>
+            <aside class="login-row-2">
+                <a class="facebook-login" href="facebook-login">Of log in via Facebook</a>
+                <a href="registreren-1.html">Nog geen account? Registreet je hier!</a>
+            </aside>
+        </div>
+    </main>
+    <script src="js/javascript.js"></script>
 </body>
 
 </html>

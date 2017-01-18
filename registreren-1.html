@@ -5,56 +5,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>Registreer je bij Transavia!</title>
+    <title>Bekijk alle reisverhalen op Transavia!</title>
+    <script src="https://use.fontawesome.com/9b2fbceb66.js"></script>
 </head>
 
-<body>
+<body id="bgimage">
+
     <header>
         <ul>
-
             <li><a href="index.html">Home</a></li>
+            <li><a href="aanmelden.html">Inloggen</a></li>
             <li><a href="ontdek.html">Ontdek</a></li>
             <li><a href="uitgelicht.html">Uitgelicht</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="about.html">About</a></li>
-            <a class="header-icon" href="johancruijff.html">&#9776;</a>
-            <a class="sliders" href="sliders"><i class="fa fa-sliders fa-2x" aria-hidden="true"></i></a>
         </ul>
-
+        <img class="menu" src="images/fa-hamburger.png" alt="Hamburger">
+        <a href="aanmelden.html"><img class="user" src="images/fa-user.png" alt="User"></a>
+        <img class="sliders" src="images/fa-sliders.png" alt="Sliders">
     </header>
+    
 
+    <main class="login">
+        <div class="login-position">
+            <section class="login-row-1">
+                <h1 class="loginheader">Aanmelden (1/2)</h1>
+                <form action="registreren-2.html">
+                    <fieldset>
+                        <legend>Voornaam</legend>
+                        <input type="text" name="email" placeholder="b.v. Pieter" required>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Tussenvoegsel</legend>
+                        <input type="text" name="ww" placeholder="b.v. van">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Achternaam</legend>
+                        <input type="text" name="ww" placeholder="b.v. Jansen" required>
+                    </fieldset>
+                    <div>
+                        <button class="button-login" type="submit" value="Zoeken">Verder</button>
+                    </div>
+                </form>
+            </section>
 
+            <aside class="login-row-2">
+                <a href="aanmelden.html">Al een account? Log hier in!</a>
+            </aside>
+        </div>
+    </main>
 
-    <div class="login-centerd-position">
-        <main class="login">
-            <div class="login-position">
-                <section class="login-row-1">
-                    <h1 class="loginheader">Aanmelden (1/2)</h1>
-                    <form class="login-form" action="registreren-2.html">
-                        <fieldset class="fieldset-1">
-                            <legend>Voornaam</legend>
-                            <input type="text" name="email" placeholder="b.v. Pieter" required>
-                        </fieldset>
-                        <fieldset>
-                            <legend>Tussenvoegsel</legend>
-                            <input type="text" name="ww" placeholder="b.v. van">
-                        </fieldset>
-                        <fieldset>
-                            <legend>Achternaam</legend>
-                            <input type="text" name="ww" placeholder="b.v. Jansen" required>
-                        </fieldset>
-                </section>
-                <section class="login-row-2">
-                    <button class="button-login" type="submit" value="Zoeken">Verder</button>
-                    </form>
-
-                    <p>Al een account? <a href="aanmelden.html">Log hier in!</a></p>
-                </section>
-            </div>
-        </main>
-    </div>
-
-
+    <script src="js/javascript.js"></script>
 </body>
 
 </html>
